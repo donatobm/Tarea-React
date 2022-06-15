@@ -1,0 +1,25 @@
+@api = http://localhost:4000
+
+### create a task
+POST {{api}}/tasks
+Content-Type: application/json
+
+{
+  "title": "nueva factura",
+  "description": "test nueva factura"
+}
+
+### get all punto
+GET {{api}}/punto
+
+### get a single punto
+GET {{api}}/punto/3
+
+
+{
+  "title": "my new title",
+  "description": "with something new"
+}
+
+### delete a single punto
+DELETE {{api}}/punto/5
